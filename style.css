@@ -1,0 +1,348 @@
+:root {
+    --ping: #00000000;
+    --bg:  #0a0a0a;
+    --shadow: 1 4px 4px rgba(0 0 0 / 0.5);
+
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    min-height: 4000px;
+}
+
+.hero::before{
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/img/5.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+    color:#1d1409;
+}
+
+.hero h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 6rem;
+}
+
+.hero h4{
+    font-size: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero a {
+    color: #1d1409;
+    background-color: #e24874;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: var(--ping);
+    color: #1d1409;
+}
+
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+.home {
+    background-color: #f3dfe5;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    min-height: 135vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+/*  */
+.mynavbar {
+    background-color: rgba(31, 29, 10, 0.075) !important; /*  */
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+/*  */
+.navbar-brand,
+.navbar-toggler-icon {
+    color: #5D5245; /*  */
+}
+
+.navbar-nav .nav-link {
+    color: #5D5245; /*  */
+}
+
+ /*  */
+.home h2, 
+.rsvp h2, .info h2, .gifts h2, .gallery h2 {
+    color: #1d1409;
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+.info p {
+    color:#0a0a0a;
+    font-family: 'Sacramento';
+    font-size: 3rem;
+    font-weight: bold;
+}
+.home h3 {
+    color: #1d1409;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.home p {
+    color: #5D5245;
+    font-size: 1.1rem; 
+}
+
+/* CSS untuk memberikan warna pada navbar */
+.mynavbar {
+    background-color: rgb(124, 116, 8); /*  */
+    color: #a7c01b; /*  */
+}
+
+.navbar-toggler {
+    background-color: #5D5245; /* Warna latar belakang */
+  }
+
+.home .couple {
+    margin-top: 100px;
+}
+
+.home .couple .h3 {
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    color: #5D5245;
+    font-weight: bold;
+}
+
+.home .couple .p {
+    color: #5D5245;
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+
+.info {
+    background-color: var(--bg);
+    color: #5D5245;
+    padding-top: 10rem;
+    font-weight: bold;
+ }
+
+ .info, .rsvp {
+    background-image: url(img/img/7.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+ }
+
+ .info .alamat {
+    font-size: 1.1rem;
+ }
+
+ .info .description {
+    font-size: 1rem;
+    font-weight: 300;
+ }
+
+ .info .card {
+    background-color: #ecdadf !important;
+    color: #5D5245 !important;
+    border: 1px solid #5D5245;
+ }
+
+ .info .card-header {
+    border-bottom: 1px solid #5D5245;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+ }
+
+.info card-body {
+    font-size: 1rem;
+
+}
+
+.info .card-footer {
+    border-bottom: 1px solid #5D5245;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.info a {
+    background-color: #e24874;
+}
+
+.gallery {
+    z-index: -1;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    background-color: #f3dfe5;
+}
+
+.rsvp, .gifts {
+    font-size: -6rem;
+    font-weight: 300;
+    color: #5D5245;
+}
+.rsvp form label {
+    color: #5D5245;
+}
+
+.gift i {
+    font-size: 64px;
+}
+
+.rsvp .btn {
+    background-color: #e24874;
+    color: #000000;
+    border: 1px solid #f5e1a1;
+}
+
+.rsvp button:hover {
+    background-color: white;
+    color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.rsvp, .gifts {
+    z-index: -1;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+}
+.gifts {
+    background-color: #f3dfe5;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.gifts .btn {
+    background-color: #e24874;
+    color: #000000;
+}
+
+
+
+/* Media Query */
+/* Laptop */
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 75%;
+    }
+    .simply-countdown>.simply-section{
+        padding: 60px;
+    }
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    color: #1f1913;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+    to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+    .simply-countdown>.simply-section{
+        padding: 40px;
+        margin: 5px;
+    }
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* mobile phone */
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+    .simply-countdown>.simply-section{
+        padding: 25px;
+        margin: 3px;
+    }
+   
+}
